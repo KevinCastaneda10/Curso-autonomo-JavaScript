@@ -442,10 +442,9 @@ interpretarIMC(22.2);
 interpretarIMC(28.5);
 interpretarIMC(32.2);*/
 
-
 // Código de golf
 
-function puntajeDeGolf(par, golpes) {
+/*function puntajeDeGolf(par, golpes) {
   if (golpes == 1) {
     return "Hole-in-one!";
   } else if (golpes <= par - 2) {
@@ -463,11 +462,104 @@ function puntajeDeGolf(par, golpes) {
   }
 }
 
-puntajeDeGolf(4, 1); // Hole-in-one!
-/*puntajeDeGolf(4, 2); // Eagle
-puntajeDeGolf(4, 3); // Birdie
-puntajeDeGolf(4, 4); // Par
-puntajeDeGolf(4, 5); // Bogey
-puntajeDeGolf(4, 6); // Double Bogey
-puntajeDeGolf(4, 7); // Go Home!
-puntajeDeGolf(4, 15); // Go Home!*/
+console.log(puntajeDeGolf(4, 1));
+console.log(puntajeDeGolf(4, 2));
+console.log(puntajeDeGolf(4, 3));
+console.log(puntajeDeGolf(4, 4));
+console.log(puntajeDeGolf(4, 5));
+console.log(puntajeDeGolf(4, 6));
+console.log(puntajeDeGolf(4, 7));
+console.log(puntajeDeGolf(4, 15));*/
+
+// Sentencias switch
+
+/*function clasificarValor(valor) {
+  var respuesta;
+  switch (valor) {
+    case 1:
+      respuesta = "alpha";
+      break;
+    case 2:
+      respuesta = "beta";
+      break;
+    case 3:
+      respuesta = "gamma";
+      break;
+    case 4:
+      respuesta = "delta";
+      break;
+  }
+  return respuesta;
+}
+
+console.log(clasificarValor(1));
+console.log(clasificarValor(2));
+console.log(clasificarValor(3));
+console.log(clasificarValor(4));*/
+
+// Sentencias switch opción predeterminada
+
+/*function seleccionarIdioma(valor) {
+  var idioma;
+  switch (valor) {
+    case 1:
+      idioma = "Español";
+      break;
+    case 2:
+      idioma = "Francés";
+      break;
+    case 3:
+      idioma = "Italiano";
+      break;
+    default:
+      idioma = "Inglés";
+      break;
+  }
+  return idioma;
+}
+
+console.log(seleccionarIdioma(3));*/
+
+// Sentencias switch múltiples casos
+
+/*function clasificarVolumen(valor) {
+  var volumen;
+  switch (valor) {
+    case 1:
+      volumen = "bajo";
+      break;
+    case 2:
+    case 3:
+      volumen = "intermedio";
+      break;
+    case 4:
+    case 5:
+    case 6:
+      volumen = "alto";
+      break;
+  }
+  return volumen;
+}
+
+console.log(clasificarVolumen(5));*/
+
+// Retornar valores booleanos
+
+/*function esMenorQue(a, b) {
+  return a < b;
+}
+
+console.log(esMenorQue(6, 3));
+console.log(esMenorQue(3, 6));*/
+
+// Patrón de retorno anticipado
+
+function calcularRaizCuadrada(num) {
+  if (num < 0) {
+    return undefined;
+  }
+  return Math.sqrt(num);
+}
+
+console.log(calcularRaizCuadrada(25));
+console.log(calcularRaizCuadrada(-5));
